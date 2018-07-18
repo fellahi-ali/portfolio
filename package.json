@@ -1,0 +1,8 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio page",
+  "main": "index.html",
+  "author": "Jamile Lima <jamilesousalima@gmail.com>",
+  "license": "MIT"
+}
