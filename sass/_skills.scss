@@ -1,0 +1,81 @@
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 10vh);
+  grid-gap: 1.5rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 15vh);
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 12vh);
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+    
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 15px;
+
+    &--1 {
+
+      background-color: #d3d3d3;
+    }
+
+    &--2 {
+      
+      background-color: #000;
+      color: #fff;
+    }
+
+    &--3 {
+
+      background-color: #03f3ab;
+    }
+
+    &--4 {
+      background-color: #ffa6a4;
+      color: #fff;
+    }
+
+    &--5 {
+      background-color: #ffa07a;
+      color: #fff;
+    }
+
+    &--6 {
+      background-color: #f7df1e;
+    }
+
+    &--7 {
+      background-color: #e86500;
+      color: #fff;
+    }
+
+    &--8 {
+      background-color: #8bd6bb;
+    }
+
+    @for $i from 1 through 13 {
+      &--#{$i} {
+        @media only screen and (max-width: $bp-largest) {
+          grid-row: unset;
+          grid-column: unset;
+        }
+      }
+    }
+  }
+}
