@@ -1,8 +1,8 @@
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(7, 10vh);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 5vh);
   grid-gap: 1.5rem;
 
   @media only screen and (max-width: $bp-largest) {
@@ -32,41 +32,50 @@
 
     &--1 {
 
-      background-color: #d3d3d3;
+      background-color: #e34f26;
     }
 
     &--2 {
       
-      background-color: #000;
+      background-color: #165cd6;
       color: #fff;
     }
 
     &--3 {
 
-      background-color: #03f3ab;
+      background-color: #f7df1e;
     }
 
     &--4 {
-      background-color: #ffa6a4;
+      background-color: #007acc;
       color: #fff;
     }
 
     &--5 {
-      background-color: #ffa07a;
+      background-color: #61dbfb;
       color: #fff;
     }
 
     &--6 {
-      background-color: #f7df1e;
+      background-color: #04a5d1;
     }
 
     &--7 {
-      background-color: #e86500;
+      background-color: #7649bb;
       color: #fff;
     }
 
     &--8 {
-      background-color: #8bd6bb;
+      background-color: #8ed5fa;
+    }
+    
+    &--9 {
+      background-color: #417fb1;
+    }
+
+    &--10 {
+      background-color: #092e20;
+      color: #FFF;
     }
 
     @for $i from 1 through 13 {
