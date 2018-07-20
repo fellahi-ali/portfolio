@@ -1,9 +1,9 @@
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 5vh);
-  grid-gap: 1.5rem;
+  grid-template-columns: repeat(6, 2fr);
+  grid-template-rows: repeat(3, 6vh);
+  grid-gap: 3.5rem;
 
   @media only screen and (max-width: $bp-largest) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -17,68 +17,17 @@
 
   &__item {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     height: 100%;
     width: 100%;
     
-    font-size: 1.7rem;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
-    border-radius: 15px;
-
-    &--1 {
-
-      background-color: #e34f26;
-    }
-
-    &--2 {
-      
-      background-color: #165cd6;
-      color: #fff;
-    }
-
-    &--3 {
-
-      background-color: #f7df1e;
-    }
-
-    &--4 {
-      background-color: #007acc;
-      color: #fff;
-    }
-
-    &--5 {
-      background-color: #61dbfb;
-      color: #fff;
-    }
-
-    &--6 {
-      background-color: #04a5d1;
-    }
-
-    &--7 {
-      background-color: #7649bb;
-      color: #fff;
-    }
-
-    &--8 {
-      background-color: #8ed5fa;
-    }
-    
-    &--9 {
-      background-color: #417fb1;
-    }
-
-    &--10 {
-      background-color: #092e20;
-      color: #FFF;
-    }
-
-    @for $i from 1 through 13 {
+    @for $i from 1 through 10 {
       &--#{$i} {
         @media only screen and (max-width: $bp-largest) {
           grid-row: unset;
@@ -88,3 +37,12 @@
     }
   }
 }
+
+.skills__item i {
+  font-size: 500%;
+}
+
+.skills__item p {
+  font-size: 1.25em;
+}
+
