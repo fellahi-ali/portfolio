@@ -113,13 +113,7 @@
 
         <div class="portfolio__item">
           <a class="portfolio__item__link" href="#">
-            Lorem
-          </a>
-        </div>
-
-        <div class="portfolio__item">
-          <a class="portfolio__item__link" href="#">
-            Pomodoro
+            Experiments
           </a>
         </div>
       </div>
@@ -151,12 +145,29 @@
 
       <div class="contact margin-section">
         <div class="form__container">
-          <h4 class="form__container__title">Send a message :)</h4>
+          <h4 class="form__container__title">Get in touch, send a
+            <span>message</span> :)</h4>
 
           <div class="margin-top-largest">
-            <a class="btn-link" href="malito:jamilesousalima@gmail.com">
-              <i class="icon--email fa fa-envelope"> E-mail </i>
-            </a>
+            <div class="side-content"></div>
+            <div class="main-content">
+            </div>
+            <div class="container">
+              <form id="contact" action="https://formspree.io/jamilesousalima@gmail.com" method="POST">
+                <fieldset>
+                  <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Your e-mail address" name="_replyto" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                  <textarea placeholder="Your message" tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                  <input name="submit" id="contact-submit" data-submit="...Sending" type="submit" value="Send">
+                </fieldset>
+              </form>
+            </div>
           </div>
         </div>
       </div>
