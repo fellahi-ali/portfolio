@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio page",
+  "homepage": "https://jamilelima.github.io/portfolio",
+  "author": "Jamile Lima <jamilesousalima@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm-run-all --parallel liveserver watch:scss ",
+    "liveserver": "live-server",
+    "watch:scss": "node-sass sass/main.scss css/style.css -w",
+    "build:scss": "node-sass sass/main.scss css/style.css --output-style compressed"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.0",
+    "node-sass": "^4.9.2",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.0",
+    "gh-pages": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamilelima/portfolio.git"
+  }
+}

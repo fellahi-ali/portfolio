@@ -1,0 +1,48 @@
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  grid-template-rows: repeat(3, 6vh);
+  grid-gap: 3.5rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 15vh);
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 12vh);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+    
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    @for $i from 1 through 10 {
+      &--#{$i} {
+        @media only screen and (max-width: $bp-largest) {
+          grid-row: unset;
+          grid-column: unset;
+        }
+      }
+    }
+  }
+}
+
+.skills__item i {
+  font-size: 500%;
+}
+
+.skills__item p {
+  font-size: 1.25em;
+}
+
