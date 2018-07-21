@@ -57,11 +57,11 @@
     }
   }
 
-  &__arrow {
+  &__arrow-down {
     &:link,
     &:visited {
       text-decoration: none;
-      color: black;
+      color: var(--color-primary);
       animation-name: bounce;
       animation-duration: 0.7s;
       animation-delay: 3s;
@@ -72,7 +72,7 @@
       transition: all .3s ease-in-out;
 
       &:hover {
-        color: var(--color-primary);
+        color: var(--color-grey-dark-2);
       }
     }
   }

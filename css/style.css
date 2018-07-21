@@ -73,9 +73,9 @@ body {
         transition: all 0.2s; }
       .header__links__item:link:hover i, .header__links__item:visited:hover i {
         color: var(--color-primary); }
-  .header__arrow:link, .header__arrow:visited {
+  .header__arrow-down:link, .header__arrow-down:visited {
     text-decoration: none;
-    color: black;
+    color: var(--color-primary);
     animation-name: bounce;
     animation-duration: 0.7s;
     animation-delay: 3s;
@@ -83,8 +83,8 @@ body {
     animation-iteration-count: infinite;
     animation-fill-mode: backwards;
     transition: all .3s ease-in-out; }
-    .header__arrow:link:hover, .header__arrow:visited:hover {
-      color: var(--color-primary); }
+    .header__arrow-down:link:hover, .header__arrow-down:visited:hover {
+      color: var(--color-grey-dark-2); }
 
 .line-bottom {
   width: 80%;
